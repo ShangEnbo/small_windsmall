@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小风车</title>
+    <style>
+        .box {
+            position: relative;
+            margin: 25px 130px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .box>div {
+            width: 0;
+            height: 0;
+        }
+        
+        .box1 {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            border: solid 10px transparent;
+            border-right-color: blue;
+            border-bottom-color: blue;
+            border-top: solid 0px blue;
+        }
+        .box2 {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            border: solid 10px transparent;
+            border-right-color: red;
+            border-bottom-color: red;
+            border-top: solid 0px red;
+            transform: rotate(90deg);
+            transform-origin: left bottom;            
+        }
+
+        .box3 {
+            position: absolute;
+            left: -10px;
+            top: 30px;
+            border: solid 10px transparent;
+            border-right-color: green;
+            border-bottom-color: green;
+            border-top: solid 0px green;
+            transform: rotate(-90deg);
+            transform-origin: right top;
+        }
+
+        .box4 {
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            border: solid 10px transparent;
+            border-right-color: yellow;
+            border-bottom-color: yellow;
+            border-top: solid 0px yellow;
+            transform: rotate(180deg);
+            transform-origin: right top;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
